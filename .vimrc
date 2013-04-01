@@ -1,3 +1,5 @@
+call pathogen#infect() 
+
 syntax on
 
 set nocompatible	" Use Vim defaults (much better!)
@@ -15,6 +17,8 @@ set shiftwidth=4
 set noexpandtab
 
 colorscheme default
+
+filetype plugin on
 
 " autocmd BufNewFile,BufRead /home/greg/OpenXcom/* set noexpandtab
 
@@ -109,3 +113,17 @@ endfunction
 " Online doc search.
 map <silent> <M-d> :call OnlineDoc()<CR>
 
+set statusline=%t       "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%{fugitive#statusline()} " git branch
+set statusline+=%y      "filetype
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+
+autocmd BufNewFile,BufRead *.vp,*.fp,*.gp,*.vs,*.fs,*.gs,*.tcs,*.tes,*.cs,*.vert,*.frag,*.geom,*.tess,*.shd,*.gls,*.glsl set ft=glsl330

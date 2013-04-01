@@ -1,0 +1,12 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/syntax_glsl"]
+	path = bundle/syntax_glsl
+	url = git://github.com/beyondmarc/glsl.vim.git
+[submodule "bindle/clang_complete"]
+	path = bindle/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete
