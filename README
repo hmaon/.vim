@@ -1,1 +1,5 @@
-this: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+This is a boring collections of files that live in .vim
+
+For interesting instructions, look at this: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+Also this: https://github.com/tpope/vim-pathogen
+
